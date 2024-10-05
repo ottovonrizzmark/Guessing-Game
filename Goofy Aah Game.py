@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Oct  5 18:27:56 2024
-
-@author: majid
-"""
-
 low = 0
 high = 100
 
