@@ -10,22 +10,23 @@ while True:
     
     x = input("Enter 'h' to indicate the guess is too high.\n"
               "Enter 'l' to indicate the guess is too low.\n"
-              "Enter 'c' to indicate I guessed correctly.\n")
+              "Enter 'c' to indicate I guessed correctly.\n").lower()
 
     if x == 'c':
         print(f"\nGame over LOOOOSAAAAAARRRRRR! Your secret number was: {guess}.\n")
         break  
 
     elif x == 'l':
-        low = guess 
+        low = guess + 1
     elif x == 'h':
-        high = guess
+        high = guess - 1
     else:
         print("\nSorry, I did not understand your input. Please enter 'h', 'l', or 'c'.\n") 
         continue 
 
-if low > high:
-    print("\nInconsistent input detected. Please check your responses.\n")
+    if low > high:
+        print("\nInconsistent input detected. Please check your responses.\n")
+        
 else:
     print("\nThank you for playing this game :3 Come back soon!\n")
     
